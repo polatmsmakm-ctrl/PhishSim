@@ -4,6 +4,8 @@
 <dict>
     <key>CFBundleDisplayName</key>
     <string>PhishSim</string>
+    <key>UILaunchScreen</key>
+    <dict/>
     <key>NSLocalNetworkUsageDescription</key>
     <string>يتصل PhishSim بخادم التدريب على شبكتك المحلية.</string>
     <key>NSAppTransportSecurity</key>

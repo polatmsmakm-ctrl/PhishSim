@@ -217,7 +217,7 @@ struct CampaignDetailView: View {
                     LabeledContent("المشاركون", value: "\(report?.participants ?? 0)")
                     LabeledContent("النقرات التجريبية", value: "\(report?.clicks ?? 0)")
                     LabeledContent("البلاغات", value: "\(report?.reports ?? 0)")
-                    LabeledContent("معدل الاكتشاف", value: "\(report?.discovery_rate ?? 0, specifier: "%.1f")٪")
+                    LabeledContent("معدل الاكتشاف", value: String(format: "%.1f", report?.discovery_rate ?? 0) + "٪")
                 }
                 if campaign.status == "active" {
                     Section("تسجيل تفاعل تجريبي") {
